@@ -2,47 +2,31 @@ import { Github, Linkedin, Twitter, Instagram, Mail, Phone, MapPin, FileText, Ar
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
+  const scrollTo = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const offset = 72;
+      const top = el.getBoundingClientRect().top + window.scrollY - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  };
+
   const quickLinks = [
-    { name: 'Home', href: '/', action: () => window.location.href = '/' },
-    { name: 'About', href: '/about', action: () => window.location.href = '/about' },
-    { name: 'Projects', href: '/projects', action: () => window.location.href = '/projects' },
-    { name: 'Contact', href: '/contact', action: () => window.location.href = '/contact' }
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Contact', id: 'contact' }
   ];
 
   const socialLinks = [
-    { 
-      name: 'GitHub', 
-      icon: Github, 
-      href: 'https://github.com/Syamsulamilien', 
-      hoverColor: 'hover:bg-gray-700'
-    },
-    { 
-      name: 'LinkedIn', 
-      icon: Linkedin, 
-      href: 'https://www.linkedin.com/in/syamsul-amilien', 
-      hoverColor: 'hover:bg-blue-600'
-    },
-    { 
-      name: 'Twitter', 
-      icon: Twitter, 
-      href: 'https://twitter.com/syamsul', 
-      hoverColor: 'hover:bg-sky-500'
-    },
-    { 
-      name: 'Instagram', 
-      icon: Instagram, 
-      href: 'https://www.instagram.com/syceliii?igsh=dzRhbWp1ZDI3ZHZ6&utm_source=qr', 
-      hoverColor: 'hover:bg-pink-600'
-    }
+    { name: 'GitHub', icon: Github, href: 'https://github.com/Syamsulamilien', hoverColor: 'hover:bg-gray-700' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/syamsul-amilien', hoverColor: 'hover:bg-blue-600' },
+    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/syamsul', hoverColor: 'hover:bg-sky-500' },
+    { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/syceliii?igsh=dzRhbWp1ZDI3ZHZ6&utm_source=qr', hoverColor: 'hover:bg-pink-600' }
   ];
 
-  const services = [
-    'Web Development',
-    'UI/UX Design',
-    'Mobile Apps',
-    'Consultation'
-  ];
+  const services = ['Web Development', 'UI/UX Design', 'Mobile Apps', 'Consultation'];
 
   return (
     <footer className="bg-gradient-to-t from-slate-900 to-slate-800 border-t border-slate-700">
@@ -66,14 +50,9 @@ const Footer = () => {
               {socialLinks.map((social, index) => {
                 const IconComponent = social.icon;
                 return (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <a key={index} href={social.href} target="_blank" rel="noopener noreferrer"
                     className={`w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300 hover:scale-110 ${social.hoverColor}`}
-                    aria-label={social.name}
-                  >
+                    aria-label={social.name}>
                     <IconComponent size={18} />
                   </a>
                 );
@@ -87,12 +66,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
-                    href={link.href}
+                  <button
+                    onClick={() => scrollTo(link.id)}
                     className="text-slate-400 hover:text-white transition-colors duration-300 hover:translate-x-1 inline-block"
                   >
                     {link.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>
@@ -132,25 +111,19 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <FileText className="text-yellow-400" size={18} />
-                <a 
-                  href="/assets/Syamsul Amilien_CV.pdf"
-                  download="Syamsul Amilien_CV.pdf"
-                  className="text-slate-400 hover:text-white transition-colors duration-300"
-                >
+                <a href="/assets/Syamsul Amilien_CV.pdf" download="Syamsul Amilien_CV.pdf"
+                  className="text-slate-400 hover:text-white transition-colors duration-300">
                   Download CV
                 </a>
               </div>
             </div>
-            
+
             {/* Newsletter Signup */}
             <div className="mt-6">
               <h5 className="text-white font-semibold mb-3">Stay Updated</h5>
               <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="flex-1 bg-slate-800 border border-slate-600 rounded-l-lg px-4 py-2 text-white placeholder-slate-400 focus:border-blue-500 focus:outline-none"
-                />
+                <input type="email" placeholder="Your email"
+                  className="flex-1 bg-slate-800 border border-slate-600 rounded-l-lg px-4 py-2 text-white placeholder-slate-400 focus:border-blue-500 focus:outline-none" />
                 <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-4 py-2 rounded-r-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center">
                   <Send size={16} />
                 </button>
@@ -167,17 +140,10 @@ const Footer = () => {
             <div className="text-slate-400 text-sm">
               &copy; {currentYear} Syamsul Amilien. All rights reserved.
             </div>
-            
             <div className="flex space-x-6 text-sm text-slate-400">
-              <a href="#" className="hover:text-white transition-colors duration-300">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-white transition-colors duration-300">
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-white transition-colors duration-300">
-                Sitemap
-              </a>
+              <button onClick={() => scrollTo('home')} className="hover:text-white transition-colors duration-300">Privacy Policy</button>
+              <button onClick={() => scrollTo('home')} className="hover:text-white transition-colors duration-300">Terms of Service</button>
+              <button onClick={() => scrollTo('home')} className="hover:text-white transition-colors duration-300">Sitemap</button>
             </div>
           </div>
         </div>
