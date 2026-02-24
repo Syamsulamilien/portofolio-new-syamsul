@@ -228,7 +228,7 @@ const About = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { number: '7+', label: 'Projects Completed', icon: '📊', color: 'from-blue-500 to-cyan-500' },
+              { number: '9+', label: 'Projects Completed', icon: '📊', color: 'from-blue-500 to-cyan-500' },
               { number: '1+', label: 'Years Experience', icon: '⏱️', color: 'from-purple-500 to-pink-500' },
               { number: '5+', label: 'Happy Clients', icon: '😊', color: 'from-green-500 to-emerald-500' },
               { number: '100%', label: 'Satisfaction Rate', icon: '⭐', color: 'from-yellow-500 to-orange-500' }
