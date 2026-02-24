@@ -107,7 +107,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="text-green-400" size={18} />
-                <span className="text-slate-400">Bandung, Indonesia</span>
+                <span className="text-slate-400">Yogyakarta, Indonesia</span>
               </div>
               <div className="flex items-center space-x-3">
                 <FileText className="text-yellow-400" size={18} />

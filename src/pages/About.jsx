@@ -1,14 +1,14 @@
 const About = () => {
   const skills = [
     { name: 'React', level: 75, color: 'from-blue-500 to-cyan-500' },
-    { name: 'JavaScript', level: 65, color: 'from-yellow-500 to-orange-500' },
+    { name: 'JavaScript', level: 80, color: 'from-yellow-500 to-orange-500' },
     { name: 'HTML/HTML5', level: 80, color: 'from-orange-500 to-red-500' },
     { name: 'CSS/Tailwind', level: 85, color: 'from-purple-500 to-pink-500' },
     { name: 'Laravel', level: 90, color: 'from-red-500 to-pink-500' },
-    { name: 'Node.js', level: 70, color: 'from-green-500 to-emerald-500' },
+    { name: 'Node.js', level: 65, color: 'from-green-500 to-emerald-500' },
     { name: 'TypeScript', level: 65, color: 'from-indigo-500 to-blue-500' },
-    { name: 'Figma', level: 70, color: 'from-pink-500 to-violet-500' },
-    { name: 'UI/UX Design', level: 70, color: 'from-rose-500 to-pink-500' }
+    { name: 'Figma', level: 65, color: 'from-pink-500 to-violet-500' },
+    { name: 'UI/UX Design', level: 65, color: 'from-rose-500 to-pink-500' }
   ];
 
   const experiences = [
@@ -31,7 +31,7 @@ const About = () => {
       description: 'Developed and designed multiple web applications and UI projects, including an E-commerce website, a vegetable-themed UI design in Figma, and a Healthoricsm website.'
     },
     {
-      year: '2024',
+      year: '2025',
       title: 'IoT Developer — FireGuard',
       company: 'Academic Project',
       description: 'Built FireGuard, a Smart IoT Fire Detection System using flame and smoke sensors. The system detects fire hazards early and responds automatically, while enabling remote monitoring via an IoT platform. Designed to minimize fire risks by leveraging sensor integration and real-time alerting.'
