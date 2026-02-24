@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 
 // Dipindahkan ke luar component agar tidak dibuat ulang setiap render
 const texts = [
+  "Fullstack Developer",
   "Front-End Developer",
   "Creative Coder",
-  "UI/UX Enthusiast",
-  "React Specialist"
+  "Laravel Specialist"
 ];
 
 const socialLinks = [
@@ -177,14 +177,14 @@ const Home = () => {
 
             <div className="mb-10 animate-fadeIn">
               <p className="text-xl sm:text-2xl text-slate-300 leading-relaxed mb-4">
-                Passionate about creating
-                <span className="italic text-blue-400 mx-2">beautiful</span>
+                Passionate about building
+                <span className="italic text-blue-400 mx-2">modern</span>
                 &
-                <span className="font-semibold text-purple-400 mx-2">interactive</span>
-                web experiences
+                <span className="font-semibold text-purple-400 mx-2">scalable</span>
+                web applications
               </p>
               <p className="text-base sm:text-lg text-slate-400 leading-relaxed mb-6">
-                that combine creativity with cutting-edge technology
+                from frontend interfaces to fullstack systems
               </p>
               <div className="flex items-center mt-6 space-x-2">
                 <div className="w-12 h-px bg-gradient-to-r from-blue-500 to-transparent"></div>
@@ -208,8 +208,8 @@ const Home = () => {
               </button>
 
               <a
-                href="/assets/Syamsul Amilien_CV.pdf"
-                download="Syamsul Amilien_CV.pdf"
+                href="/assets/CV Syamsul.PDF"
+                download="CV Syamsul.pdf"
                 className="group px-10 py-5 border-2 border-slate-600 text-slate-300 font-semibold text-lg rounded-2xl hover:border-blue-500 hover:text-white transition-all duration-500 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/20 inline-flex items-center gap-3 animate-bounce-subtle delay-150 relative overflow-hidden"
               >
                 <span className="font-mono text-sm">02</span>

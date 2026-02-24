@@ -1,22 +1,40 @@
 const About = () => {
   const skills = [
-    { name: 'React', level: 90, color: 'from-blue-500 to-cyan-500' },
-    { name: 'JavaScript', level: 85, color: 'from-yellow-500 to-orange-500' },
-    { name: 'HTML/HTML5', level: 92, color: 'from-orange-500 to-red-500' },
-    { name: 'CSS/Tailwind', level: 88, color: 'from-purple-500 to-pink-500' },
+    { name: 'React', level: 75, color: 'from-blue-500 to-cyan-500' },
+    { name: 'JavaScript', level: 65, color: 'from-yellow-500 to-orange-500' },
+    { name: 'HTML/HTML5', level: 80, color: 'from-orange-500 to-red-500' },
+    { name: 'CSS/Tailwind', level: 85, color: 'from-purple-500 to-pink-500' },
     { name: 'Laravel', level: 90, color: 'from-red-500 to-pink-500' },
-    { name: 'Node.js', level: 75, color: 'from-green-500 to-emerald-500' },
-    { name: 'TypeScript', level: 80, color: 'from-indigo-500 to-blue-500' },
-    { name: 'Figma', level: 80, color: 'from-pink-500 to-violet-500' },
+    { name: 'Node.js', level: 70, color: 'from-green-500 to-emerald-500' },
+    { name: 'TypeScript', level: 65, color: 'from-indigo-500 to-blue-500' },
+    { name: 'Figma', level: 70, color: 'from-pink-500 to-violet-500' },
     { name: 'UI/UX Design', level: 70, color: 'from-rose-500 to-pink-500' }
   ];
 
   const experiences = [
     {
+      year: '2025',
+      title: 'Fullstack Developer — Internship',
+      company: 'RSU PKU Muhammadiyah Bantul',
+      description: 'Built a full-stack Asset Monitoring System from scratch for hospital asset management. Responsible for both frontend and backend development, including database design, API development, and building an interactive dashboard UI to monitor and track hospital assets in real-time.'
+    },
+    {
+      year: '2025',
+      title: 'Frontend Developer — Internship',
+      company: 'RSU PKU Muhammadiyah Bantul',
+      description: 'Developed and improved the frontend of an existing web-based Queue Management System for the hospital. Focused on enhancing the UI to be more responsive and user-friendly for managing and displaying patient queues efficiently.'
+    },
+    {
       year: '2024 - Present',
       title: 'Frontend Developer',
       company: 'Freelance Projects',
       description: 'Developed and designed multiple web applications and UI projects, including an E-commerce website, a vegetable-themed UI design in Figma, and a Healthoricsm website.'
+    },
+    {
+      year: '2024',
+      title: 'IoT Developer — FireGuard',
+      company: 'Academic Project',
+      description: 'Built FireGuard, a Smart IoT Fire Detection System using flame and smoke sensors. The system detects fire hazards early and responds automatically, while enabling remote monitoring via an IoT platform. Designed to minimize fire risks by leveraging sensor integration and real-time alerting.'
     },
     {
       year: '2024',
@@ -106,7 +124,7 @@ const About = () => {
                     <span className="px-4 py-2 bg-purple-500/10 border border-purple-500/20 text-purple-300 rounded-full text-sm font-medium hover:bg-purple-500/20 transition-colors duration-300">UI/UX Enthusiast</span>
                   </div>
                   <div className="text-slate-400 text-sm">
-                    I am a fifth-semester student at Universitas 'Aisyiyah Yogyakarta, majoring in Information Technology. I am continuously developing my knowledge and skills in the field of technology through both academic learning and personal projects. With a strong passion for learning, I am committed to becoming an innovative individual who is ready to contribute to the advancement of technology in the future.
+                    I am a sixth-semester Information Technology student at Universitas ‘Aisyiyah Yogyakarta. I am committed to continuously developing my knowledge and technical skills through structured academic learning as well as independent projects. With a strong passion for technology and innovation, I strive to become an adaptive and solution-oriented individual who is ready to contribute meaningfully to the advancement of technology in the future.
                   </div>
                 </div>
               </div>
@@ -124,23 +142,14 @@ const About = () => {
                 <div className="p-4 bg-slate-700/20 rounded-xl border-l-4 border-blue-500">
                   <p className="font-medium text-blue-300 mb-2">Professional Background</p>
                   <p className="text-sm">
-                    I am a passionate frontend developer with one year of experience in building modern and interactive web interfaces. 
-                    Since starting my journey in 2024, I have worked on various projects ranging from E-commerce websites to IoT-based applications.
-                  </p>
-                </div>
-                
-                <div className="p-4 bg-slate-700/20 rounded-xl border-l-4 border-purple-500">
-                  <p className="font-medium text-purple-300 mb-2">Development Philosophy</p>
-                  <p className="text-sm">
-                    My focus is on creating clean, efficient code combined with visually appealing and user-friendly designs. 
-                    I believe that the best technology delivers an outstanding user experience.
+                    I am a passionate frontend and fullstack developer with one year of experience in building modern and interactive web interfaces as well as developing complete systems end-to-end. Since starting my journey in 2024, I have worked on various projects ranging from E-commerce websites and IoT-based applications to a fullstack Asset Monitoring System and frontend development for a web-based Queue Management System during my internship at RSU PKU Muhammadiyah Bantul.
                   </p>
                 </div>
                 
                 <div className="p-4 bg-slate-700/20 rounded-xl border-l-4 border-green-500">
                   <p className="font-medium text-green-300 mb-2">Beyond Coding</p>
                   <p className="text-sm">
-                    Outside of coding, I enjoy learning new technologies, exploring UI/UX design trends, and experimenting with creative coding projects.
+                    Outside of coding, I enjoy playing games, futsal, and exploring culinary spots. I also love keeping up with the latest technology trends to keep my creativity fresh.
                   </p>
                 </div>
               </div>
@@ -238,7 +247,7 @@ const About = () => {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes fadeIn {
           from {
             opacity: 0;

@@ -26,7 +26,7 @@ const Footer = () => {
     { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/syceliii?igsh=dzRhbWp1ZDI3ZHZ6&utm_source=qr', hoverColor: 'hover:bg-pink-600' }
   ];
 
-  const services = ['Web Development', 'UI/UX Design', 'Mobile Apps', 'Consultation'];
+  const services = ['Web Development', 'Fullstack Development', 'IoT Development', 'Consultation'];
 
   return (
     <footer className="bg-gradient-to-t from-slate-900 to-slate-800 border-t border-slate-700">
@@ -44,7 +44,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-slate-400 mb-6 leading-relaxed">
-              Frontend Developer passionate about creating beautiful, functional, and user-friendly web experiences.
+              Fullstack & Frontend Developer passionate about building modern, scalable, and functional web applications — from clean frontend interfaces to complete fullstack systems.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => {
@@ -111,7 +111,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <FileText className="text-yellow-400" size={18} />
-                <a href="/assets/Syamsul Amilien_CV.pdf" download="Syamsul Amilien_CV.pdf"
+                <a href="/assets/CV Syamsul.pdf" download="CV Syamsul.pdf"
                   className="text-slate-400 hover:text-white transition-colors duration-300">
                   Download CV
                 </a>

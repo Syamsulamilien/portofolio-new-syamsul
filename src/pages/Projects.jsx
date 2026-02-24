@@ -163,6 +163,58 @@ const Projects = () => {
       team: '3 developers, 1 healthcare IT specialist, 1 compliance officer'
     },
     {
+      id: 8,
+      title: 'Queue Management System',
+      desc: 'A real-time queue management system built with Laravel, PHP, and Tailwind CSS. Designed to streamline patient queue flow with live updates, ensuring efficient and transparent queue management.',
+      image: '/assets/images/antrian_pku.png',
+      category: 'web',
+      technologies: ['Laravel', 'PHP', 'Tailwind CSS', 'Real-time', 'MySQL'],
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Syamsulamilien',
+      featured: true,
+      fullDescription: 'A real-time Queue Management System developed during an internship at RSU PKU Muhammadiyah Bantul. Built using Laravel, PHP, and Tailwind CSS, this system enables efficient management of patient queues with live updates so staff and patients can monitor queue status without refreshing the page.',
+      keyFeatures: [
+        'Real-time queue display with live updates',
+        'Queue number generation and management',
+        'Multi-counter support',
+        'Queue status monitoring dashboard',
+        'Responsive UI with Tailwind CSS',
+        'Queue history and reporting',
+        'Role-based access for staff',
+        'Automatic queue reset per session'
+      ],
+      challenges: 'Implementing real-time updates to ensure all connected screens reflect queue changes instantly without performance issues.',
+      outcome: 'Successfully deployed at RSU PKU Muhammadiyah Bantul, significantly reducing patient wait time confusion and improving queue transparency.',
+      duration: '2 week',
+      team: '2 developers (Frontend focus)'
+    },
+    {
+      id: 9,
+      title: 'Asset Monitoring System',
+      desc: 'A fullstack real-time asset monitoring system built with Laravel 12, featuring QR code scanning, PDF reports, CRUD for all modules, master asset & location management, real-time location tracking when assets are moved, and routine maintenance scheduling.',
+      image: '/assets/images/asset_pku.png',
+      category: 'web',
+      technologies: ['Laravel 12', 'PHP', 'Tailwind CSS', 'QR Code', 'Real-time', 'MySQL'],
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Syamsulamilien',
+      featured: true,
+      fullDescription: 'A comprehensive fullstack Asset Monitoring System developed during an internship at RSU PKU Muhammadiyah Bantul using Laravel 12. This system provides complete visibility into hospital asset management — from tracking physical locations in real-time to scheduling routine maintenance. Built as a fullstack project, handling both backend logic and frontend UI.',
+      keyFeatures: [
+        'QR Code scanning for quick asset identification',
+        'Real-time location tracking — updates instantly when asset is moved',
+        'Master Asset management (CRUD)',
+        'Master Location management (CRUD)',
+        'PDF report generation for asset data',
+        'Routine maintenance scheduling and monitoring',
+        'CRUD functionality across all modules',
+        'Real-time dashboard with live asset status'
+      ],
+      challenges: 'Building a real-time location update system that accurately reflects asset movements across different rooms and floors, while keeping the UI responsive and easy to use for non-technical hospital staff.',
+      outcome: 'Successfully deployed at RSU PKU Muhammadiyah Bantul, improving asset tracking efficiency and reducing time spent manually locating hospital equipment.',
+      duration: '2 months',
+      team: '1 Fullstack Developer (Solo Project)'
+    },
+    {
       id: 7,
       title: 'E-commerce Website',
       desc: 'A modern online store platform featuring product catalog, shopping cart, online payment system, and integrated order management for a smooth and fast shopping experience.',

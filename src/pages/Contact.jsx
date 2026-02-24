@@ -61,7 +61,7 @@ const Contact = () => {
         </svg>
       ),
       title: 'Location',
-      value: 'Bandung, Indonesia',
+      value: 'Yogyakarta, Indonesia',
       description: 'Available for local meetups'
     },
     {
